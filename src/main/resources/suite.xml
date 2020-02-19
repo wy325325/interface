@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="false">
+
+    <test name="Test">
+        <classes>
+            <class name="com.mooc.casetest.login">
+
+
+
+            </class>
+
+
+        </classes>
+
+
+    </test>
+    <listeners>
+        <listener class-name="com.mooc.resports.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+
+</suite>
