@@ -1,0 +1,29 @@
+[
+  {
+    "description":"获得get请求的cookiess",
+    "request":{
+      "uri":"/hdgetcookies",
+      "method":"post"
+    },
+    "response":{
+      "cookies":{"login":"true"},
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "text":"你获得了cookies------------------"
+    }
+  },
+  {
+    "description":"获得get请求的cookiess",
+    "request":{
+      "uri":"/hdget",
+      "cookies":{"login":"true"},
+      "method":"get"
+    },
+    "response":{
+
+
+      "text":"你获得了cookies------------------"
+    }
+  }
+]

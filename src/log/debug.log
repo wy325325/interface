@@ -999,3 +999,128 @@
 2020-02-19 16:14:39  [ main:2235 ] - [ DEBUG ]  << "[\r][\n]"
 2020-02-19 16:14:39  [ main:2235 ] - [ DEBUG ]  Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@16150369
 2020-02-19 16:14:40  [ main:2860 ] - [ ERROR ]  java.lang.AssertionError: 登入测试 expected [10103] but found [20103]
+2020-02-19 21:46:28  [ main:0 ] - [ DEBUG ]  Get connection for route HttpRoute[{}->http://test.lemonban.com:8080]
+2020-02-19 21:46:28  [ main:95 ] - [ DEBUG ]  Connecting to test.lemonban.com:8080
+2020-02-19 21:46:28  [ main:220 ] - [ DEBUG ]  CookieSpec selected: best-match
+2020-02-19 21:46:28  [ main:282 ] - [ DEBUG ]  Auth cache not set in the context
+2020-02-19 21:46:28  [ main:282 ] - [ DEBUG ]  Attempt 1 to execute request
+2020-02-19 21:46:28  [ main:282 ] - [ DEBUG ]  Sending request: POST /futureloan/mvc/api/member/register HTTP/1.1
+2020-02-19 21:46:28  [ main:282 ] - [ DEBUG ]  >> "POST /futureloan/mvc/api/member/register HTTP/1.1[\r][\n]"
+2020-02-19 21:46:28  [ main:282 ] - [ DEBUG ]  >> "Content-Length: 44[\r][\n]"
+2020-02-19 21:46:28  [ main:282 ] - [ DEBUG ]  >> "Content-Type: application/json[\r][\n]"
+2020-02-19 21:46:28  [ main:282 ] - [ DEBUG ]  >> "Host: test.lemonban.com:8080[\r][\n]"
+2020-02-19 21:46:28  [ main:282 ] - [ DEBUG ]  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-19 21:46:28  [ main:282 ] - [ DEBUG ]  >> "User-Agent: Apache-HttpClient/4.1.2 (java 1.5)[\r][\n]"
+2020-02-19 21:46:28  [ main:298 ] - [ DEBUG ]  >> "[\r][\n]"
+2020-02-19 21:46:28  [ main:298 ] - [ DEBUG ]  >> POST /futureloan/mvc/api/member/register HTTP/1.1
+2020-02-19 21:46:28  [ main:298 ] - [ DEBUG ]  >> Content-Length: 44
+2020-02-19 21:46:28  [ main:298 ] - [ DEBUG ]  >> Content-Type: application/json
+2020-02-19 21:46:28  [ main:298 ] - [ DEBUG ]  >> Host: test.lemonban.com:8080
+2020-02-19 21:46:28  [ main:298 ] - [ DEBUG ]  >> Connection: Keep-Alive
+2020-02-19 21:46:28  [ main:298 ] - [ DEBUG ]  >> User-Agent: Apache-HttpClient/4.1.2 (java 1.5)
+2020-02-19 21:46:28  [ main:298 ] - [ DEBUG ]  >> "{"mobilephone":"15268890987","pwd":"123456"}"
+2020-02-19 21:46:29  [ main:798 ] - [ DEBUG ]  << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-19 21:46:29  [ main:813 ] - [ DEBUG ]  << "Server: Apache-Coyote/1.1[\r][\n]"
+2020-02-19 21:46:29  [ main:813 ] - [ DEBUG ]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2020-02-19 21:46:29  [ main:813 ] - [ DEBUG ]  << "Transfer-Encoding: chunked[\r][\n]"
+2020-02-19 21:46:29  [ main:813 ] - [ DEBUG ]  << "Date: Wed, 19 Feb 2020 13:46:32 GMT[\r][\n]"
+2020-02-19 21:46:29  [ main:813 ] - [ DEBUG ]  << "[\r][\n]"
+2020-02-19 21:46:29  [ main:813 ] - [ DEBUG ]  Receiving response: HTTP/1.1 200 OK
+2020-02-19 21:46:29  [ main:813 ] - [ DEBUG ]  << HTTP/1.1 200 OK
+2020-02-19 21:46:29  [ main:813 ] - [ DEBUG ]  << Server: Apache-Coyote/1.1
+2020-02-19 21:46:29  [ main:813 ] - [ DEBUG ]  << Content-Type: application/json;charset=UTF-8
+2020-02-19 21:46:29  [ main:813 ] - [ DEBUG ]  << Transfer-Encoding: chunked
+2020-02-19 21:46:29  [ main:813 ] - [ DEBUG ]  << Date: Wed, 19 Feb 2020 13:46:32 GMT
+2020-02-19 21:46:29  [ main:845 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2020-02-19 21:46:29  [ main:860 ] - [ DEBUG ]  << "45[\r][\n]"
+2020-02-19 21:46:29  [ main:860 ] - [ DEBUG ]  << "{"status":0,"code":"20103","data":null,"msg":"[0xe6][0x89][0x8b][0xe6][0x9c][0xba][0xe5][0x8f][0xb7][0xe4][0xb8][0x8d][0xe8][0x83][0xbd][0xe4][0xb8][0xba][0xe7][0xa9][0xba]"}"
+2020-02-19 21:46:29  [ main:860 ] - [ DEBUG ]  << "[\r][\n]"
+2020-02-19 21:46:29  [ main:1126 ] - [ DEBUG ]  << "0[\r][\n]"
+2020-02-19 21:46:29  [ main:1126 ] - [ DEBUG ]  << "[\r][\n]"
+2020-02-19 21:46:29  [ main:1126 ] - [ DEBUG ]  Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@5d7148e2
+2020-02-19 21:46:31  [ main:2684 ] - [ ERROR ]  java.lang.AssertionError: 登入测试 expected [{"status":0,"code":null,"data":null,"msg":"抱歉，请先登录。"}] but found [20103]
+2020-02-19 21:46:31  [ main:2707 ] - [ DEBUG ]  Get connection for route HttpRoute[{}->http://test.lemonban.com:8080]
+2020-02-19 21:46:31  [ main:2711 ] - [ DEBUG ]  Stale connection check
+2020-02-19 21:46:31  [ main:2714 ] - [ DEBUG ]  CookieSpec selected: best-match
+2020-02-19 21:46:31  [ main:2715 ] - [ DEBUG ]  Auth cache not set in the context
+2020-02-19 21:46:31  [ main:2716 ] - [ DEBUG ]  Attempt 1 to execute request
+2020-02-19 21:46:31  [ main:2717 ] - [ DEBUG ]  Sending request: POST /futureloan/mvc/api/member/register HTTP/1.1
+2020-02-19 21:46:31  [ main:2718 ] - [ DEBUG ]  >> "POST /futureloan/mvc/api/member/register HTTP/1.1[\r][\n]"
+2020-02-19 21:46:31  [ main:2720 ] - [ DEBUG ]  >> "Content-Length: 43[\r][\n]"
+2020-02-19 21:46:31  [ main:2721 ] - [ DEBUG ]  >> "Content-Type: application/json[\r][\n]"
+2020-02-19 21:46:31  [ main:2722 ] - [ DEBUG ]  >> "Host: test.lemonban.com:8080[\r][\n]"
+2020-02-19 21:46:31  [ main:2723 ] - [ DEBUG ]  >> "Connection: Keep-Alive[\r][\n]"
+2020-02-19 21:46:31  [ main:2724 ] - [ DEBUG ]  >> "User-Agent: Apache-HttpClient/4.1.2 (java 1.5)[\r][\n]"
+2020-02-19 21:46:31  [ main:2726 ] - [ DEBUG ]  >> "[\r][\n]"
+2020-02-19 21:46:31  [ main:2726 ] - [ DEBUG ]  >> POST /futureloan/mvc/api/member/register HTTP/1.1
+2020-02-19 21:46:31  [ main:2727 ] - [ DEBUG ]  >> Content-Length: 43
+2020-02-19 21:46:31  [ main:2728 ] - [ DEBUG ]  >> Content-Type: application/json
+2020-02-19 21:46:31  [ main:2729 ] - [ DEBUG ]  >> Host: test.lemonban.com:8080
+2020-02-19 21:46:31  [ main:2729 ] - [ DEBUG ]  >> Connection: Keep-Alive
+2020-02-19 21:46:31  [ main:2730 ] - [ DEBUG ]  >> User-Agent: Apache-HttpClient/4.1.2 (java 1.5)
+2020-02-19 21:46:31  [ main:2733 ] - [ DEBUG ]  >> "{"mobilephone":"55555555555","pwd":"12346"}"
+2020-02-19 21:46:31  [ main:2770 ] - [ DEBUG ]  << "HTTP/1.1 200 OK[\r][\n]"
+2020-02-19 21:46:31  [ main:2771 ] - [ DEBUG ]  << "Server: Apache-Coyote/1.1[\r][\n]"
+2020-02-19 21:46:31  [ main:2772 ] - [ DEBUG ]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2020-02-19 21:46:31  [ main:2773 ] - [ DEBUG ]  << "Transfer-Encoding: chunked[\r][\n]"
+2020-02-19 21:46:31  [ main:2774 ] - [ DEBUG ]  << "Date: Wed, 19 Feb 2020 13:46:35 GMT[\r][\n]"
+2020-02-19 21:46:31  [ main:2776 ] - [ DEBUG ]  << "[\r][\n]"
+2020-02-19 21:46:31  [ main:2777 ] - [ DEBUG ]  Receiving response: HTTP/1.1 200 OK
+2020-02-19 21:46:31  [ main:2778 ] - [ DEBUG ]  << HTTP/1.1 200 OK
+2020-02-19 21:46:31  [ main:2779 ] - [ DEBUG ]  << Server: Apache-Coyote/1.1
+2020-02-19 21:46:31  [ main:2780 ] - [ DEBUG ]  << Content-Type: application/json;charset=UTF-8
+2020-02-19 21:46:31  [ main:2781 ] - [ DEBUG ]  << Transfer-Encoding: chunked
+2020-02-19 21:46:31  [ main:2782 ] - [ DEBUG ]  << Date: Wed, 19 Feb 2020 13:46:35 GMT
+2020-02-19 21:46:31  [ main:2784 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2020-02-19 21:46:31  [ main:2785 ] - [ DEBUG ]  << "45[\r][\n]"
+2020-02-19 21:46:31  [ main:2787 ] - [ DEBUG ]  << "{"status":0,"code":"20103","data":null,"msg":"[0xe6][0x89][0x8b][0xe6][0x9c][0xba][0xe5][0x8f][0xb7][0xe4][0xb8][0x8d][0xe8][0x83][0xbd][0xe4][0xb8][0xba][0xe7][0xa9][0xba]"}"
+2020-02-19 21:46:31  [ main:2788 ] - [ DEBUG ]  << "[\r][\n]"
+2020-02-19 21:46:31  [ main:2789 ] - [ DEBUG ]  << "0[\r][\n]"
+2020-02-19 21:46:31  [ main:2789 ] - [ DEBUG ]  << "[\r][\n]"
+2020-02-19 21:46:31  [ main:2790 ] - [ DEBUG ]  Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@6b09fb41
+2020-02-19 21:46:32  [ main:3653 ] - [ ERROR ]  java.lang.AssertionError: 登入测试 expected [{"status":0,"code":null,"data":null,"msg":"抱歉，请先登录。"}] but found [20103]
+2020-02-19 21:46:33  [ main:4748 ] - [ DEBUG ]  Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-19 21:46:33  [ main:4754 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2020-02-19 21:46:33  [ main:4764 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("index.ftl"): Found
+2020-02-19 21:46:33  [ main:4765 ] - [ DEBUG ]  Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/78762/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2020-02-19 21:46:34  [ main:5678 ] - [ DEBUG ]  Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-19 21:46:34  [ main:5678 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2020-02-19 21:46:34  [ main:5694 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("head.ftl"): Found
+2020-02-19 21:46:34  [ main:5694 ] - [ DEBUG ]  Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/78762/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2020-02-19 21:46:34  [ main:5712 ] - [ DEBUG ]  Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-19 21:46:34  [ main:5714 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2020-02-19 21:46:34  [ main:5722 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("nav.ftl"): Found
+2020-02-19 21:46:34  [ main:5723 ] - [ DEBUG ]  Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/78762/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2020-02-19 21:46:34  [ main:5757 ] - [ DEBUG ]  Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-19 21:46:34  [ main:5759 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2020-02-19 21:46:34  [ main:5762 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2020-02-19 21:46:34  [ main:5763 ] - [ DEBUG ]  Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/78762/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2020-02-19 21:46:34  [ main:5809 ] - [ DEBUG ]  Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-19 21:46:34  [ main:5811 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2020-02-19 21:46:34  [ main:5815 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2020-02-19 21:46:34  [ main:5816 ] - [ DEBUG ]  Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/78762/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2020-02-19 21:46:34  [ main:5864 ] - [ DEBUG ]  Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-19 21:46:34  [ main:5866 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2020-02-19 21:46:34  [ main:5868 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2020-02-19 21:46:34  [ main:5869 ] - [ DEBUG ]  Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/78762/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2020-02-19 21:46:34  [ main:5921 ] - [ DEBUG ]  "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-02-19 21:46:34  [ main:5924 ] - [ DEBUG ]  Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-19 21:46:34  [ main:5927 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2020-02-19 21:46:34  [ main:5929 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2020-02-19 21:46:34  [ main:5932 ] - [ DEBUG ]  Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/78762/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2020-02-19 21:46:34  [ main:5947 ] - [ DEBUG ]  Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-19 21:46:34  [ main:5949 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2020-02-19 21:46:34  [ main:5951 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2020-02-19 21:46:34  [ main:5953 ] - [ DEBUG ]  Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/78762/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2020-02-19 21:46:34  [ main:5970 ] - [ DEBUG ]  Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-19 21:46:34  [ main:5972 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2020-02-19 21:46:34  [ main:5977 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2020-02-19 21:46:34  [ main:5978 ] - [ DEBUG ]  Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/78762/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2020-02-19 21:46:34  [ main:6023 ] - [ DEBUG ]  Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-19 21:46:34  [ main:6024 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2020-02-19 21:46:34  [ main:6028 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2020-02-19 21:46:34  [ main:6029 ] - [ DEBUG ]  Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/78762/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2020-02-19 21:46:34  [ main:6047 ] - [ DEBUG ]  Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-02-19 21:46:34  [ main:6047 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2020-02-19 21:46:34  [ main:6047 ] - [ DEBUG ]  TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2020-02-19 21:46:34  [ main:6047 ] - [ DEBUG ]  Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/78762/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
